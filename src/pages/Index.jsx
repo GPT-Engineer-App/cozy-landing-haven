@@ -3,16 +3,19 @@ import { ArrowRight } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-[#FCFBF4] text-black">
+    <div className="min-h-screen flex flex-col bg-[#F47C7C] text-black">
       {/* Header */}
-      <header className="bg-[#FCFBF4] shadow-sm">
+      <header className="bg-[#F47C7C] shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-black">YourLogo</h1>
+          <div className="flex items-center">
+            <img src="/logo.svg" alt="Bear Logo" className="h-10 w-auto mr-2" />
+            <h1 className="text-2xl font-bold text-black">BearTech</h1>
+          </div>
           <nav>
             <ul className="flex space-x-4">
-              <li><a href="#" className="text-black hover:text-gray-600">Home</a></li>
-              <li><a href="#" className="text-black hover:text-gray-600">About</a></li>
-              <li><a href="#" className="text-black hover:text-gray-600">Mission</a></li>
+              <li><a href="#" className="text-black hover:text-gray-800">Home</a></li>
+              <li><a href="#" className="text-black hover:text-gray-800">About</a></li>
+              <li><a href="#" className="text-black hover:text-gray-800">Mission</a></li>
             </ul>
           </nav>
         </div>
