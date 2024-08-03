@@ -8,16 +8,17 @@ const Index = () => {
       <header className="bg-[#F47C7C] shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/logo.svg" alt="Bear Logo" className="h-10 w-auto mr-2" />
-            <h1 className="text-2xl font-bold text-black">BearTech</h1>
+            <img src="/logo.svg" alt="DevelDeep Logo" className="h-10 w-auto mr-2" />
+            <h1 className="text-2xl font-bold text-black">DevelDeep</h1>
           </div>
-          <nav>
-            <ul className="flex space-x-4">
+          <nav className="flex-grow">
+            <ul className="flex justify-center space-x-8">
               <li><a href="#" className="text-black hover:text-gray-800">Home</a></li>
               <li><a href="#" className="text-black hover:text-gray-800">About</a></li>
               <li><a href="#" className="text-black hover:text-gray-800">Mission</a></li>
             </ul>
           </nav>
+          <div className="w-[100px]"></div> {/* This empty div balances the layout */}
         </div>
       </header>
 
