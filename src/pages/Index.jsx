@@ -10,9 +10,9 @@ const Index = () => {
           <h1 className="text-2xl font-bold text-black">YourLogo</h1>
           <nav>
             <ul className="flex space-x-4">
-              <li><a href="#" className="text-black hover:text-[#ff6666]">Home</a></li>
-              <li><a href="#" className="text-black hover:text-[#ff6666]">About</a></li>
-              <li><a href="#" className="text-black hover:text-[#ff6666]">Mission</a></li>
+              <li><a href="#" className="text-black hover:text-gray-600">Home</a></li>
+              <li><a href="#" className="text-black hover:text-gray-600">About</a></li>
+              <li><a href="#" className="text-black hover:text-gray-600">Mission</a></li>
             </ul>
           </nav>
         </div>
@@ -24,7 +24,7 @@ const Index = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-5xl font-bold text-black mb-6">Transforming Ideas into Reality</h2>
             <p className="text-xl text-black mb-8">We're passionate about innovation and committed to excellence.</p>
-            <Button className="bg-[#ff6666] hover:bg-[#ff8080] text-[#FCFBF4] text-lg px-8 py-3">
+            <Button className="bg-black hover:bg-gray-800 text-[#FCFBF4] text-lg px-8 py-3">
               Learn More
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -32,10 +32,10 @@ const Index = () => {
         </section>
 
         {/* Who We Are Section */}
-        <section className="py-20 bg-[#ff6666]">
+        <section className="py-20 bg-black">
           <div className="container mx-auto px-4">
             <h3 className="text-4xl font-bold text-center text-[#FCFBF4] mb-12">Who We Are</h3>
-            <div className="bg-[#FCFBF4] p-8 rounded-lg shadow-lg border border-black max-w-3xl mx-auto">
+            <div className="bg-[#FCFBF4] p-8 rounded-lg shadow-lg border border-gray-300 max-w-3xl mx-auto">
               <p className="text-black text-lg leading-relaxed mb-4">
                 We are a team of passionate innovators, dedicated to pushing the boundaries of technology and creativity. With years of experience and a commitment to excellence, we strive to deliver cutting-edge solutions that make a real difference in people's lives.
               </p>
@@ -50,7 +50,7 @@ const Index = () => {
         <section className="py-20 bg-[#FCFBF4]">
           <div className="container mx-auto px-4">
             <h3 className="text-4xl font-bold text-center text-black mb-12">Our Mission</h3>
-            <div className="bg-black p-8 rounded-lg shadow-lg border border-[#ff6666] max-w-3xl mx-auto">
+            <div className="bg-black p-8 rounded-lg shadow-lg border border-gray-300 max-w-3xl mx-auto">
               <p className="text-[#FCFBF4] text-lg leading-relaxed mb-4">
                 Our mission is to empower businesses and individuals through innovative technology solutions. We are committed to:
               </p>
@@ -68,7 +68,7 @@ const Index = () => {
         </section>
 
         {/* Contact Us Section */}
-        <section className="py-16 bg-[#ff6666] text-[#FCFBF4]">
+        <section className="py-16 bg-black text-[#FCFBF4]">
           <div className="container mx-auto px-4 text-center">
             <h3 className="text-3xl font-bold mb-6">Contact Us</h3>
             <p className="text-lg mb-4">
@@ -78,7 +78,7 @@ const Index = () => {
               We're here to turn your vision into reality. Let's create something amazing together!
             </p>
             <p className="text-xl font-semibold">
-              Reach out to us at: <a href="mailto:contact@yourcompany.com" className="underline hover:text-black">contact@yourcompany.com</a>
+              Reach out to us at: <a href="mailto:contact@yourcompany.com" className="underline hover:text-gray-300">contact@yourcompany.com</a>
             </p>
           </div>
         </section>
