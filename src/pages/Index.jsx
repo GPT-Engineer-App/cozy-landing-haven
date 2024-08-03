@@ -66,10 +66,26 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* Contact Us Section */}
+        <section className="py-16 bg-[#ff6666] text-[#FCFBF4]">
+          <div className="container mx-auto px-4 text-center">
+            <h3 className="text-3xl font-bold mb-6">Contact Us</h3>
+            <p className="text-lg mb-4">
+              Are you a business looking to innovate or an individual with a groundbreaking idea?
+            </p>
+            <p className="text-lg mb-6">
+              We're here to turn your vision into reality. Let's create something amazing together!
+            </p>
+            <p className="text-xl font-semibold">
+              Reach out to us at: <a href="mailto:contact@yourcompany.com" className="underline hover:text-black">contact@yourcompany.com</a>
+            </p>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-black text-[#FCFBF4] py-8 border-t border-[#ff6666]">
+      <footer className="bg-black text-[#FCFBF4] py-4">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; 2024 YourCompany. All rights reserved.</p>
         </div>
