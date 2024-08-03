@@ -35,7 +35,7 @@ const Index = () => {
         <section className="py-20 bg-black">
           <div className="container mx-auto px-4">
             <h3 className="text-4xl font-bold text-center text-[#FCFBF4] mb-12">Who We Are</h3>
-            <div className="bg-[#FCFBF4] p-8 rounded-lg shadow-lg border border-gray-300 max-w-3xl mx-auto">
+            <div className="bg-[#FCFBF4] p-8 rounded-none shadow-lg border border-gray-300 max-w-3xl mx-auto">
               <p className="text-black text-lg leading-relaxed mb-4">
                 We are a team of passionate innovators, dedicated to pushing the boundaries of technology and creativity. With years of experience and a commitment to excellence, we strive to deliver cutting-edge solutions that make a real difference in people's lives.
               </p>
@@ -50,7 +50,7 @@ const Index = () => {
         <section className="py-20 bg-[#FCFBF4]">
           <div className="container mx-auto px-4">
             <h3 className="text-4xl font-bold text-center text-black mb-12">Our Mission</h3>
-            <div className="bg-black p-8 rounded-lg shadow-lg border border-gray-300 max-w-3xl mx-auto">
+            <div className="bg-black p-8 rounded-none shadow-lg border border-gray-300 max-w-3xl mx-auto">
               <p className="text-[#FCFBF4] text-lg leading-relaxed mb-4">
                 Our mission is to empower businesses and individuals through innovative technology solutions. We are committed to:
               </p>
