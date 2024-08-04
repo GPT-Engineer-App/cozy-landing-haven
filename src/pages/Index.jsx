@@ -1,7 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useCallback } from "react";
 
 const Index = () => {
+  const handleSmoothScroll = useCallback((e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
   return (
     <div className="min-h-screen flex flex-col bg-[#F47C7C] text-black">
       {/* Header */}
@@ -14,8 +22,8 @@ const Index = () => {
           <nav className="flex-grow">
             <ul className="flex justify-center space-x-6">
               <li><a href="#" className="text-sm text-black hover:text-gray-800">Home</a></li>
-              <li><a href="#" className="text-sm text-black hover:text-gray-800">About</a></li>
-              <li><a href="#" className="text-sm text-black hover:text-gray-800">Mission</a></li>
+              <li><a href="#who-we-are" className="text-sm text-black hover:text-gray-800" onClick={(e) => handleSmoothScroll(e, 'who-we-are')}>Who We Are</a></li>
+              <li><a href="#mission" className="text-sm text-black hover:text-gray-800" onClick={(e) => handleSmoothScroll(e, 'mission')}>Mission</a></li>
             </ul>
           </nav>
           <div className="w-[100px]"></div> {/* This empty div balances the layout */}
@@ -36,7 +44,7 @@ const Index = () => {
         </section>
 
         {/* Who We Are Section */}
-        <section className="py-32 bg-black">
+        <section id="who-we-are" className="py-32 bg-black">
           <div className="container mx-auto px-8">
             <h3 className="text-4xl font-bold text-center text-[#FCFBF4] mb-16">Who We Are</h3>
             <div className="bg-[#FCFBF4] p-12 rounded-none shadow-lg border border-gray-300 max-w-4xl mx-auto">
@@ -54,7 +62,7 @@ const Index = () => {
         </section>
 
         {/* Mission Section */}
-        <section className="py-32 bg-[#FCFBF4]">
+        <section id="mission" className="py-32 bg-[#FCFBF4]">
           <div className="container mx-auto px-8">
             <h3 className="text-4xl font-bold text-center text-black mb-16">Our Mission</h3>
             <div className="bg-black p-12 rounded-none shadow-lg border border-gray-300 max-w-4xl mx-auto">
